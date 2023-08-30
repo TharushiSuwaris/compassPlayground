@@ -516,7 +516,7 @@ const Scrollytelling = ({ country }: { country: any }) => {
   const onStepEnter = ({ data }: { data: number }) => {
     setCurrentStepIndex(data);
   };
-  const focusedSubpillar = ["Infrastructure", "Connectivity Technology"];
+  const focusedSubpillar = ["Connectivity", "Physical Infrastructure"];
   const countryFocusedSubpillar =
     country["scores"][focusedSubpillar[0]][focusedSubpillar[1]];
 
