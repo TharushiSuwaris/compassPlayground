@@ -38,13 +38,12 @@ async function main() {
 
   const pillarNames = [
     "Overall",
-    "Foundations",
-    "Infrastructure",
+    "DPInfrastructure",
+    "Connectivity",
     "Government",
     "Regulation",
-    "Business",
+    "Economy",
     "People",
-    "Strategy",
   ];
 
   // A map of pillar name to subpillar name.
