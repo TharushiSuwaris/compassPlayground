@@ -584,7 +584,7 @@ const Scrollytelling = ({ country }: { country: any }) => {
             <div className="h-full w-full flex items-center justify-center px-[5vw] mb-[5vw]">
               <ScoreRing
                 defaultHoveredSubpillar={
-                  currentStepIndex === 5 ? undefined : "Connectivity Technology"
+                  currentStepIndex === 5 ? undefined : "Physical Infrastructure"
                 }
                 country={
                   currentStepIndex > 5
