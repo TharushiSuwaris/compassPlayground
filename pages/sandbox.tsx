@@ -69,7 +69,7 @@ export default function Sandbox(
                   scores: country["scores"],
                 }}
                 definitions={definitions}
-                pillar="Government"
+                pillar="Economy"
               />
             </div>
           </div>
