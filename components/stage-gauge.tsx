@@ -355,13 +355,14 @@ export function OverallStageGauge(props: OverallStageGaugeProps) {
         <g transform={`translate(${size / 2}, ${size / 3})`}>
           {rings.map((ring, i) => {
             let pillarName = ancillary.pillarNames[i];
-            console.log("pillar name : ",pillarName)
             let opacity = 1;
 
             if (activePillar !== pillarName) {
               opacity = 0.5;
             }
-
+            if(pillarName === 'Overall'){
+              console.log('stageinfo',stageInfo)
+            }
             let primaryColor = pillarColorMap[pillarName].base;
 
             return (
