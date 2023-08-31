@@ -280,7 +280,7 @@ export function OverallStageGauge(props: OverallStageGaugeProps) {
   const { scores, name } = props;
   const [activePillar, setActivePillar] = useState<Pillar>("Overall");
   const stageInfo = scores[activePillar]?.stage;
-
+  console.log("stageinfo",stageInfo)
   let offset = 4;
   let size = 250;
   let ringSize = size / 4;
@@ -360,9 +360,7 @@ export function OverallStageGauge(props: OverallStageGaugeProps) {
             if (activePillar !== pillarName) {
               opacity = 0.5;
             }
-            if(pillarName === 'Overall'){
-              console.log('stageinfo',stageInfo)
-            }
+          
             let primaryColor = pillarColorMap[pillarName].base;
 
             return (
