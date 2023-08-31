@@ -276,7 +276,7 @@ type OverallStageGaugeProps = Pick<
   "scores" | "definitions" | "name"
 >;
 
-export function OverallStageGauge(props: OverallStageGaugeProps) {
+export function OverallStageGauge(props: StageGaugeProps) {
   const { scores, name } = props;
   const [activePillar, setActivePillar] = useState<Pillar>("Overall");
   const stageInfo = scores[activePillar]?.stage;
