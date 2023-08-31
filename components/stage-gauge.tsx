@@ -271,10 +271,7 @@ export function StageGauge(props: StageGaugeProps) {
   }
 }
 
-type OverallStageGaugeProps = Pick<
-  StageGaugeProps,
-  "scores" | "definitions" | "name"
->;
+
 
 export function OverallStageGauge(props: StageGaugeProps) {
   const { scores, name } = props;
