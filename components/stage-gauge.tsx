@@ -271,13 +271,17 @@ export function StageGauge(props: StageGaugeProps) {
   }
 }
 
+type OverallStageGaugeProps = Pick<
+  StageGaugeProps,
+  "scores" | "definitions" | "name"
+>;
 
-
-export function OverallStageGauge(props: StageGaugeProps) {
+export function OverallStageGauge(props: OverallStageGaugeProps) {
   const { scores, name } = props;
   const [activePillar, setActivePillar] = useState<Pillar>("Overall");
   const stageInfo = scores[activePillar]?.stage;
-  console.log("stageinfo",stageInfo)
+  console.log("scores : ",scores)
+  console.log("name : ",name)
   let offset = 4;
   let size = 250;
   let ringSize = size / 4;
